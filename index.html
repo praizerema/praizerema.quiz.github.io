@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <title>question</title>
+</head>
+
+
+<body>
+    <div class="questionWrp">
+        <h1  id="title">Quiz</h1>
+        <div class="questionTemp" id="wrap">
+            <!-- Snakes have two legs. -->
+            <div id="temp"></div>
+            <div class="divwbtn">
+               <button class="true answer" id="optA" onclick="answerChecker(index,'a')"></button> <br>
+        <button class="false answer" id="optB" onclick="answerChecker(index,'b')"></button> <br>
+        <button class="false answer" id="optC" onclick="answerChecker(index,'c')"></button>
+ 
+            </div>
+            
+        </div>
+    </div>
+    <div class="btn" id="btn">
+        <button class="next" id="next" onclick="display(++index,'false')" style="float:right"> Next </button>
+
+        <span id="anstxt"> 
+
+        </span>
+    </div>
+    <div id="ans"></div>
+    <footer class="footerc" ><div class="my-4"><a href="mailto">eremapraiz@gmail.com</a></div> <div style="margin-top: 60px;">copyright @Erema 2020</div>  </footer>
+</body>
+<script src="quiz.js"></script>
+
+<style>
+     @media only screen and (max-width: 600px) {
+        body {
+        /* height: 100vh !important; */
+        width: 730px !important;
+        justify-content: center !important;
+        flex: auto !important;
+        /* background-color: red !important; */
+    }
+    .questionWrp {
+        width: 600px !important;
+        height: 400px !important;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto !important;
+    padding: 5px 5px ;
+    margin-top: 50px !important;
+
+    }
+
+    .questionTemp {
+        width: 500px !important;
+        height: 250px !important;
+        background-color: #ffff;
+        text-align: left;
+        margin: auto;
+        font-size: 2em;
+        font-weight: 800;
+        padding: 20px 20px;
+
+    }
+    #ans {
+        font-size: 2em;
+        font-weight: 900;
+        width: 600px !important;
+        height: 5vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        color: #931e9e
+    }
+    .btn {
+        height: 70px;
+        margin: auto;
+        width: 600px !important;
+    }
+    .footerc{
+bottom: 0px !important;
+margin-top: 80px !important;
+text-align: center !important;
+font-size: 13px;
+    }
+    .divwbtn{
+        margin-top: 30px !important;
+    }
+button{
+    font-size: 13px;
+}
+     }
+   
+     .footerc{
+
+margin-top: 80px !important;
+text-align: center !important;
+    }
+    .isDisabled {
+        pointer-events: none;
+        opacity: 0.5
+    }
+    .bg-green{
+        pointer-events: none;
+        background-color: rgb(11, 114, 11);  
+        color: #ffff
+    }
+    .bg-red{
+        pointer-events: none;
+        background-color: rgb(211, 9, 9);  
+        color: #ffff
+    }
+    .questionWrp {
+        width: 800px;
+        height: 55vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+    padding: 5px 5px ;
+    margin-top: 50px;
+
+    }
+
+    .questionTemp {
+        width: 700px;
+        height: 35vh;
+        background-color: #ffff;
+        text-align: left;
+        margin: auto;
+        font-size: 2em;
+        font-weight: 800;
+        padding: 20px 20px;
+
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        padding: 5px 10px;
+        background-color: rgb(19, 19, 19);
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 10px 10px;
+    }
+
+    .divwbtn{
+        margin-top: 30px !important;
+    }
+    .btn {
+        height: 70px;
+        margin: auto;
+        width: 800px;
+    }
+
+    #ans {
+        font-size: 2em;
+        font-weight: 900;
+        width: 780px;
+        height: 5vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        color: #931e9e
+    }
+    a{
+        text-decoration: none;
+        color: #931e9e;
+    }
+    #title{
+        color: #931e9e;
+    }
+#anstxt{
+    font-size: 2em;
+        font-weight: 900;
+        /* width: 780px;
+        height: 5vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+        padding: 20px; */
+        color: #931e9e 
+}
+    /* .flse{
+    width: 350px;
+    height: 50px;
+    pdding: 5px px;
+    background-color:  #931e9e;
+    color: #fbcf20;
+    font-weight: bold;
+    border-radius: 5px;
+} */
+</style>

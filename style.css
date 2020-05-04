@@ -1,0 +1,81 @@
+
+    body {
+        height: 100vh;
+        justify-content: center;
+        flex: auto;
+    }
+
+    .isDisabled {
+        pointer-events: none;
+        opacity: 0.5
+    }
+    .bg-green{
+        pointer-events: none;
+        background-color: rgb(11, 114, 11);  
+        color: #ffff
+    }
+    .bg-red{
+        pointer-events: none;
+        background-color: rgb(211, 9, 9);  
+        color: #ffff
+    }
+    .questionWrp {
+        width: 800px;
+        height: 50vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .questionTemp {
+        width: 500px;
+        height: 20vh;
+        background-color: #ffff;
+        text-align: left;
+        margin: auto;
+        font-size: 2em;
+        font-weight: 800;
+        padding: 20px 20px;
+
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        padding: 5px 10px;
+        background-color: #931e9e;
+        color: #fbcf20;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 10px 10px;
+    }
+
+
+    .btn {
+        margin: auto;
+        width: 800px;
+    }
+
+    #ans {
+        font-size: 2em;
+        font-weight: 900;
+        /* text-align: center; */
+        width: 800px;
+        height: 10vh;
+        background-color: #ece9ec;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        color: #931e9e
+    }
+
+    /* .flse{
+    width: 350px;
+    height: 50px;
+    pdding: 5px px;
+    background-color:  #931e9e;
+    color: #fbcf20;
+    font-weight: bold;
+    border-radius: 5px;
+} */
