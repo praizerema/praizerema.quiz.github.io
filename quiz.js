@@ -103,8 +103,3 @@ document.getElementById('optA').classList.add('bg-red')
       
         document.getElementById('next').classList.remove('isDisabled')
     }
-
-// display (index)
-//  function display (index){ 
-
-// };
