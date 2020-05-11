@@ -111,7 +111,6 @@ function answerChecker(index, ans) {
     document.getElementById("optC").classList.add("bg-green");
   }
 
-  console.log(score);
   document.getElementById("ans").innerHTML =
     "Answered correctly: " + score + " question(s).";
 
