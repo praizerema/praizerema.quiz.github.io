@@ -38,10 +38,9 @@ function display(index, ans) {
     .getElementById("optC")
     .classList.remove("bg-green", "bg-red", "isDisabled");
 
-  document.getElementById("next").classList.add("isDisabled");
+  document.getElementById("next").classList.add("isDisabled1");
   if (index >= test.length) {
     for (var i in test) {
-      var opt;
       console.log(answer[i]);
       console.log(test[i].answer);
       //         if (test[i].answer == answer[i]) {
@@ -55,7 +54,7 @@ function display(index, ans) {
     document.getElementById("title").innerHTML = "Bravo";
 
     document.getElementById("ans").innerHTML =
-      "Your score is " + score + "/" + test.length;
+      "Your final score is " + score + "/" + test.length;
     console.log(score);
 
     var btnDiv = document.getElementById("btn");
@@ -75,9 +74,9 @@ function display(index, ans) {
     document.getElementById("optB").innerHTML = test[index].options.b;
     document.getElementById("optC").innerHTML = test[index].options.c;
     question++;
-    document.getElementById("temp").innerHTML = question + test[index].question;
+    document.getElementById("temp").innerHTML = test[index].question;
 
-    document.getElementById("ans").innerHTML = question + "/" + test.length;
+    document.getElementById("qnum").innerHTML = "Question " + question
     index++;
   }
 }
@@ -86,6 +85,10 @@ function answerChecker(index, ans) {
   console.log(ans);
   if (ans == test[index].answer) {
     score += 1;
+    document.getElementById("optA").classList.add("isDisabled");
+    document.getElementById("optB").classList.add("isDisabled");
+    document.getElementById("optC").classList.add("isDisabled");
+
   } else {
     if (test[index].answer != "a" && test[index].answer != "b") {
       document.getElementById("optA").classList.add("bg-red");
@@ -101,7 +104,6 @@ function answerChecker(index, ans) {
   answer.push(ans);
   console.log(answer);
   if (test[index].answer == "a") {
-    console.log("meee");
     document.getElementById("optA").classList.add("bg-green");
   } else if (test[index].answer == "b") {
     document.getElementById("optB").classList.add("bg-green");
@@ -113,5 +115,5 @@ function answerChecker(index, ans) {
   document.getElementById("ans").innerHTML =
     "Answered correctly: " + score + " question(s).";
 
-  document.getElementById("next").classList.remove("isDisabled");
+  document.getElementById("next").classList.remove("isDisabled1");
 }
