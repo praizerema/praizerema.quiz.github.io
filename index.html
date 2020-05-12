@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>question</title>
 </head>
 
@@ -31,34 +31,34 @@
         </span>
     </div>
     <div id="ans"></div>
-    <footer class="footerc" ><div class="my-4"><a href="mailto">eremapraiz@gmail.com</a></div> <div style="margin-top: 60px;">copyright @Erema 2020</div>  </footer>
+    <footer class="footerc" ><div class=""><a href="mailto">eremapraiz@gmail.com</a></div> <div style="margin-top: 60px;">copyright @Erema 2020</div>  </footer>
 </body>
 <script src="quiz.js"></script>
 
 <style>
      @media only screen and (max-width: 600px) {
         body {
-        width: 100% ;
+        width: 800px !important;
    overflow-x: hidden !important;
         justify-content: center !important;
-        flex: auto !important;
-        padding: 10px !important;
+        flex: auto !important; 
+         padding: 5px !important;
     } 
     
     .questionWrp {
-        width: 550px !important;
-        height: 450px !important;
+        width: 700px !important;
+        min-height: 450px !important;
         background-color: #ece9ec;
-        text-align: center;
+        text-align: center !important;
         margin: auto !important;
-    padding: 5px 5px ;
+    padding: 5px 5px !important;
     margin-top: 50px !important;
-
+align-self: center !important;
     }
 
     .questionTemp {
-        width: 400px !important;
-        height: 300px !important;
+        width: 600px !important;
+        min-height: 300px !important;
         background-color: #ffff;
         text-align: left;
         margin: auto !important;
@@ -70,7 +70,7 @@
     #ans {
         font-size: 2em;
         font-weight: 900;
-        width: 600px !important;
+        width: 670px !important;
         height: 5vh;
         background-color: #ece9ec;
         text-align: center;
@@ -86,8 +86,8 @@
     .footerc{
 bottom: 0px !important;
 margin-top: 80px !important;
-text-align: center !important;
 font-size: 15px;
+
     }
     .divwbtn{
         margin-top: 50px !important;
@@ -128,7 +128,7 @@ text-align: center !important;
         color: #ffff
     }
     .questionWrp {
-        width: 800px;
+       max-width: 800px;
         height: 55vh;
         background-color: #ece9ec;
         text-align: center;
@@ -139,7 +139,7 @@ text-align: center !important;
     }
 
     .questionTemp {
-        width: 700px;
+        max-width: 700px;
         height: 38vh;
         background-color: #ffff;
         text-align: left;
